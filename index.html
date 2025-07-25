@@ -632,6 +632,29 @@
    <script type="text/javascript" src="js/jquery.js"></script>
    <script type="text/javascript" src="js/vendors.min.js"></script>
    <script type="text/javascript" src="js/main.js"></script>
+   <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+         apiKey: "AIzaSyBqajsOFfliPlpugmDGjCIZrBNXkJttVSw",
+         authDomain: "zyverra-927ac.firebaseapp.com",
+         projectId: "zyverra-927ac",
+         storageBucket: "zyverra-927ac.firebasestorage.app",
+         messagingSenderId: "1000895467966",
+         appId: "1:1000895467966:web:7bc1b6872755e0fc4069ef",
+         measurementId: "G-P1Z8EY9W3D"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+   </script>
 </body>
 
 </html>
